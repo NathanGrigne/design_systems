@@ -1,26 +1,68 @@
-
-
-.first-title
-{
-
+@mixin primary-font {
+  font-family: 'Garamond-Regular', serif;
 }
 
-.second-title
-{
-
+@mixin text-500-font {
+  font-family: 'Typold-Book-500', sans-serif
 }
 
-.action-text
-{
-
+@mixin text-light-font {
+  font-family: 'Typold-Light', sans-serif;
 }
 
-.default-text
-{
-
+@mixin text-medium-font {
+  font-family: 'Typold-Medium', sans-serif;
 }
 
-.small-text
-{
+@mixin text-regular-font {
+  font-family: 'Typold-Regular', sans-serif;
+}
 
+
+.first-title {
+  @include primary-font;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+.second-title {
+  @include primary-font;
+  font-size: 1.75rem;
+  line-height: 3.5625rem;
+}
+
+.third-title {
+  @include primary-font;
+  font-size: 2.375rem;
+  line-height: 2.625rem;
+}
+
+.third-title-bis {
+  @include text-500-font;
+  font-size: 1.75rem;
+}
+
+.fourth-title {
+  @include text-light-font;
+  font-size: 1.3125rem;
+}
+
+.action-text {
+  @include text-medium-font-font;
+  font-size: 1rem;
+}
+
+.default-text {
+  @include text-light-font;
+  font-size: 1rem;
+}
+
+.label-text {
+  @include text-regular-font;
+  font-size: 0.875rem;
+}
+
+.small-text {
+  @include text-500-font;
+  font-size: 0.75rem;
 }
