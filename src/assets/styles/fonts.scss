@@ -1,10 +1,44 @@
 @font-face {
-  font-family: Garamond_regular;
-  src: url(../fonts/garamond_regular.ttf);
+  font-family: Garamond-regular;
+  font-style: normal;
+  font-display: swap;
+  src:
+          url(../fonts/garamond/eb-garamond-v14-latin-regular.woff2),
+          url(../fonts/garamond/eb-garamond-v14-latin-regular.woff);
 }
 
 @font-face {
-  font-family: Garamond_bold;
-  src: url(../fonts/garamond_bold.ttf);
+  font-family: Typold-Book-500;
+  font-style: normal;
+  font-display: swap;
+  src:
+          url(../fonts/typold/woff2/Typold-Book-500.woff2),
+          url(../fonts/typold/woff/Typold-Book-500.woff);
 }
 
+@font-face {
+  font-family: Typold-Light;
+  font-style: normal;
+  font-display: swap;
+  src:
+          url(../fonts/typold/woff2/Typold-Light.woff2),
+          url(../fonts/typold/woff/Typold-Light.woff);
+}
+
+@font-face {
+  font-family: Typold-Medium;
+  font-style: normal;
+  font-display: swap;
+  src:
+          url(../fonts/typold/woff2/Typold-Medium.woff2),
+          url(../fonts/typold/woff/Typold-Medium.woff);
+}
+
+@font-face {
+  font-family: Typold-Regular;
+  font-style: normal;
+  font-display: swap;
+  src:
+          url(../fonts/typold/woff2/Typold-Regular.woff2),
+          url(../fonts/typold/woff/Typold-Regular.woff);
+}
