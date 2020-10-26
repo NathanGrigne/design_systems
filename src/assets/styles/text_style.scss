@@ -1,3 +1,5 @@
+@import "./fonts.scss";
+
 @mixin primary-font {
   font-family: 'Garamond-Regular', serif;
 }
@@ -22,35 +24,35 @@ body {
   color: var(--black-color)
 }
 
-.first-title {
+@mixin first-title {
   @include primary-font;
   font-size: 3rem;
   line-height: 4.5rem;
 }
 
-.second-title {
+@mixin second-title {
   @include primary-font;
   font-size: 1.75rem;
   line-height: 3.5625rem;
 }
 
-.third-title {
+@mixin third-title {
   @include primary-font;
   font-size: 2.375rem;
   line-height: 2.625rem;
 }
 
-.third-title-bis {
+@mixin third-title-bis {
   @include text-500-font;
   font-size: 1.75rem;
 }
 
-.fourth-title {
+@mixin fourth-title {
   @include text-light-font;
   font-size: 1.3125rem;
 }
 
-.action-text {
+@mixin action-text {
   @include text-medium-font;
   font-size: 1rem;
 }
@@ -60,12 +62,12 @@ body {
   font-size: 1rem;
 }
 
-.label-text {
+@mixin label-text {
   @include text-regular-font;
   font-size: 0.875rem;
 }
 
-.small-text {
+@mixin small-text {
   @include text-500-font;
   font-size: 0.75rem;
 }
