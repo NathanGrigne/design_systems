@@ -34,7 +34,7 @@ export default {
 
 .checkbox:checked{
     appearance: none;
-    background-color: var(--validate-60-color);
+    background-color: var(--validate-10-color);
     border: none;
     display: flex;
     justify-content: center;

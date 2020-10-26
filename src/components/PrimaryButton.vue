@@ -2,7 +2,7 @@
   <!-- HTML CODE -->
   <div class="container-buttons">
       <div class="primary-button">
-          <p>Primary</p>
+          <p>Create my account</p>
       </div>
   </div>
 </template>
