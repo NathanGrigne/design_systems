@@ -18,6 +18,9 @@
   font-family: 'Typold-Regular', sans-serif;
 }
 
+body {
+  color: var(--black-color)
+}
 
 .first-title {
   @include primary-font;
@@ -48,11 +51,11 @@
 }
 
 .action-text {
-  @include text-medium-font-font;
+  @include text-medium-font;
   font-size: 1rem;
 }
 
-.default-text {
+@mixin default-text {
   @include text-light-font;
   font-size: 1rem;
 }
