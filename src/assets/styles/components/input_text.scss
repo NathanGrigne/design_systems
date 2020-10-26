@@ -1,0 +1,75 @@
+@import "../text_style";
+@import "../color/colors";
+
+:root {
+  --input--radius: 18px;
+  --input--height: 3.5rem;
+  --input--width: 21.875rem;
+  --input--padding--left: 1.5rem;
+  --input--space--right: 1rem;
+}
+
+.container--input {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--input--width);
+}
+
+.input {
+  @include default-text;
+  height: var(--input--height);
+  width: var(--input--width);
+  box-sizing: border-box;
+  border-radius: var(--input--radius);
+  border: 1px solid var(--gray-3-color);
+  padding-left: var(--input--padding--left);
+  color: var(--black-color);
+}
+
+.input:focus {
+  border: 1px solid var(--gray-4-color);
+  outline: none;
+}
+
+.container--input__success .input {
+  border: 1px solid var(--validate-90-color);
+}
+
+.container--input__error .input {
+  border: 1px solid var(--error-80-color);
+  background-color: var(--error-50-color);
+}
+
+.container--input-with-icon {
+  position: relative;
+}
+
+.input--icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: var(--input--space--right);
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+}
+
+.container--input__error .input--icon {
+  background-image: url("../../icons/alert-triangle.svg");
+}
+
+.container--input__success .input--icon {
+  background-image: url("../../icons/validate.svg");
+}
+
+.input--message {
+  @include small-text;
+  max-width: var(--input--width);
+  text-align: left;
+  color: var(--black-color);
+}
+
+
+.container--input__error .input--message {
+  color: var(--error-80-color);
+}

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/" class="default-text">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -9,12 +9,9 @@
 </template>
 
 <script>
-  import './assets/styles/color/colors.scss';
-  import './assets/styles/text_style.scss';
-  import './assets/styles/fonts.scss';
-export default {
+import "./assets/styles/components/input_text.scss";
 
-}
+export default {};
 </script>
 
 <style lang="scss">

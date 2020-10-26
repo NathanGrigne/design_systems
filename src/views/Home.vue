@@ -6,9 +6,8 @@
 </template>
 
 <script>
-
 // Import Component PS : Caps is necessary on the first letter of tour component
-import Test from "@/components/Test.vue";
+import Test from "@/components/input_text.vue";
 
 export default {
   // Export Vue
