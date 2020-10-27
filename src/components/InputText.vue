@@ -1,15 +1,46 @@
 <template>
   <!-- HTML CODE -->
-  <div class="container--input">
-    <div class="container--input-with-icon">
-      <input
-        type="text"
-        class="default-text input input--text"
-        placeholder="Placeholder"
-      />
-      <i class="input--icon"></i>
+  <div class="container--form--input">
+    <p class="label-text input--label">{{ label }}</p>
+    <div
+      v-if="type == 'error'"
+      class="container--input container--input__error"
+    >
+      <div class="container--input-with-icon">
+        <input
+          v-bind:placeholder="label"
+          type="text"
+          class="default-text input input--text"
+        />
+        <i class="input--icon"></i>
+      </div>
+      <p class="small-text js-message input--message">{{ message }}</p>
     </div>
-    <p class="small-text js-message input--message "></p>
+    <div
+      v-else-if="type == 'success'"
+      class="container--input container--input__success"
+    >
+      <div class="container--input-with-icon">
+        <input
+          v-bind:placeholder="label"
+          type="text"
+          class="default-text input input--text"
+        />
+        <i class="input--icon"></i>
+      </div>
+      <p class="small-text js-message input--message "></p>
+    </div>
+    <div v-else class="container--input">
+      <div class="container--input-with-icon">
+        <input
+          v-bind:placeholder="label"
+          type="text"
+          class="default-text input input--text"
+        />
+        <i class="input--icon"></i>
+      </div>
+      <p class="small-text js-message input--message "></p>
+    </div>
   </div>
 </template>
 
@@ -20,15 +51,22 @@
 // Export Component
 export default {
   // Give name
-  name: "InputText"
+  name: "InputText",
+  props: ["label", "type", "message"]
 };
 </script>
 
 <style lang="scss" scoped>
+.container--form--input {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
 .container--input {
   display: flex;
   flex-direction: column;
-  max-width: var(--input--width);
+  width: var(--input--width);
 }
 
 .input {
@@ -84,9 +122,15 @@ export default {
   max-width: var(--input--width);
   text-align: left;
   color: var(--black-color);
+  margin-top: 8px;
 }
 
 .container--input__error .input--message {
   color: var(--error-80-color);
+}
+.input--label {
+  margin-bottom: 10px;
+  margin-top: 23px;
+  color: var(--gray-3-color);
 }
 </style>

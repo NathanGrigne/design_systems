@@ -4,7 +4,7 @@
 :root {
   --input--radius: 18px;
   --input--height: 3.5rem;
-  --input--width: 21.875rem;
+  --input--width: 100%;
   --input--padding--left: 1.5rem;
   --input--space--right: 1rem;
   --btn--space: 0.75rem;
@@ -64,6 +64,7 @@
 .action-text {
   @include text-medium-font;
   font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .default-text {
