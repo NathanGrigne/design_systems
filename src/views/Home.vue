@@ -95,6 +95,7 @@ p.third-title {
 
 .term {
   color: var(--secondary-100-color);
+  cursor: pointer;
 }
 
 .container {

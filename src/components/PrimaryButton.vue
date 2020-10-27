@@ -39,6 +39,7 @@ export default {
 
 .primary-button:hover {
   background-color: var(--primary-90-color);
+  cursor: pointer;
 }
 
 .primary-button:active {

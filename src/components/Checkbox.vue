@@ -32,6 +32,10 @@ export default {
     border-radius: 8px;
 }
 
+.checkbox:hover{
+    cursor: pointer;
+}
+
 .checkbox:checked{
     appearance: none;
     background-color: var(--validate-10-color);
