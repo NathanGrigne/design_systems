@@ -4,15 +4,15 @@
     <div class="small-text btn-bis">
       <i v-if="type == 'google'"></i>
       <i v-if="type == 'facebook'"></i>
-      <p v-if="type == 'google'" class="btn--text btn--icon btn--icon__google">
+      <a v-if="type == 'google'" class="btn--text btn--icon btn--icon__google">
         Sign-in with Google
-      </p>
-      <p
+      </a>
+      <a
         v-if="type == 'facebook'"
         class="btn--text btn--icon btn--icon__facebook"
       >
         Sign-in with Facebook
-      </p>
+      </a>
     </div>
   </div>
 </template>
@@ -34,8 +34,7 @@ export default {
   position: relative;
   display: inline-block;
   border-radius: var(--input--radius);
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: var(--btn--space);
   color: var(--secondary-100-color);
   box-sizing: border-box;
   border: 1px solid var(--white-1-color);
@@ -55,7 +54,7 @@ export default {
 
 .btn--icon::before {
   content: " ";
-  margin-right: 12px;
+  margin-right: var(--btn--space);
   height: 24px;
   width: 24px;
   background-size: contain;
