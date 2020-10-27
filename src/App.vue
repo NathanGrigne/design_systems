@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import "./assets/styles/components/input_text.scss";
+import "./assets/styles/main.scss";
 
 export default {};
 </script>

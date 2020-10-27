@@ -1,4 +1,14 @@
-@import "./fonts.scss";
+@import "colors";
+@import "fonts";
+
+:root {
+  --input--radius: 18px;
+  --input--height: 3.5rem;
+  --input--width: 21.875rem;
+  --input--padding--left: 1.5rem;
+  --input--space--right: 1rem;
+}
+
 
 @mixin primary-font {
   font-family: 'Garamond-Regular', serif;
@@ -20,54 +30,58 @@
   font-family: 'Typold-Regular', sans-serif;
 }
 
-body {
-  color: var(--black-color)
-}
 
-@mixin first-title {
+
+.first-title {
   @include primary-font;
   font-size: 3rem;
   line-height: 4.5rem;
 }
 
-@mixin second-title {
+.second-title {
   @include primary-font;
   font-size: 1.75rem;
   line-height: 3.5625rem;
 }
 
-@mixin third-title {
+.third-title {
   @include primary-font;
   font-size: 2.375rem;
   line-height: 2.625rem;
 }
 
-@mixin third-title-bis {
+.third-title-bis {
   @include text-500-font;
   font-size: 1.75rem;
 }
 
-@mixin fourth-title {
+.fourth-title {
   @include text-light-font;
   font-size: 1.3125rem;
 }
 
-@mixin action-text {
+.action-text {
   @include text-medium-font;
   font-size: 1rem;
 }
 
-@mixin default-text {
+.default-text {
   @include text-light-font;
   font-size: 1rem;
 }
 
-@mixin label-text {
+.label-text {
   @include text-regular-font;
   font-size: 0.875rem;
 }
 
-@mixin small-text {
+.small-text {
   @include text-500-font;
   font-size: 0.75rem;
 }
+
+
+body {
+  color: var(--black-color)
+}
+

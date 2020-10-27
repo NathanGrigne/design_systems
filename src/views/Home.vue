@@ -8,8 +8,8 @@
 
 <script>
 // Import Component PS : Caps is necessary on the first letter of tour component
-import InputText from "@/components/input_text.vue";
-import SocialButton from "@/components/btn_social_connexion.vue";
+import InputText from "@/components/inputText.vue";
+import SocialButton from "@/components/btnSocialConnexion.vue";
 
 export default {
   // Export Vue
