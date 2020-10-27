@@ -84,6 +84,9 @@
 
 
 body {
-  color: var(--black-color)
+  color: var(--black-color);
+  background-image: url("../image/background.png");
+  background-position: top;
+  background-size: cover;
 }
 

@@ -13,7 +13,7 @@ export default {};
 </script>
 
 <style lang="scss">
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -23,15 +23,11 @@ export default {};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #FFFFFF;
-  background-image: url("assets/image/background.png");
-  background-position: center;
-  background-size: cover;
+  color: #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
 }
 </style>

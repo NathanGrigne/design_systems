@@ -58,14 +58,14 @@ export default {
 .home {
   display: flex;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
 }
 .container {
   width: 614px;
   min-height: 818px;
   background-color: #060904a6;
   margin-left: 15vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   border-radius: 18px;
 }
 .container .third-title {
