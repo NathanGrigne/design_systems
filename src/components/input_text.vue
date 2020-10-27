@@ -16,6 +16,6 @@
 // Export Component
 export default {
   // Give name
-  name: "Test"
+  name: "InputText"
 };
 </script>
