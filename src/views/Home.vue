@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Call component -->
-    <div class="container">
+    <form class="container">
       <h1>Planty</h1>
       <p class="third-title">How much are you a plant lover?</p>
       <div class="container--connexion">
@@ -31,7 +31,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </template>
 
