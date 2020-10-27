@@ -1,3 +1,16 @@
+@import "colors";
+@import "fonts";
+
+:root {
+  --input--radius: 18px;
+  --input--height: 3.5rem;
+  --input--width: 21.875rem;
+  --input--padding--left: 1.5rem;
+  --input--space--right: 1rem;
+  --btn--space: 0.75rem;
+}
+
+
 @mixin primary-font {
   font-family: 'Garamond-Regular', serif;
 }
@@ -17,6 +30,7 @@
 @mixin text-regular-font {
   font-family: 'Typold-Regular', sans-serif;
 }
+
 
 
 .first-title {
@@ -66,3 +80,9 @@
   @include text-500-font;
   font-size: 0.75rem;
 }
+
+
+body {
+  color: var(--black-color)
+}
+

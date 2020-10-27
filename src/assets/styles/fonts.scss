@@ -3,8 +3,8 @@
   font-style: normal;
   font-display: swap;
   src:
-          url(../fonts/garamond/eb-garamond-v14-latin-regular.woff2),
-          url(../fonts/garamond/eb-garamond-v14-latin-regular.woff);
+          url(/src/assets/fonts/garamond/eb-garamond-v14-latin-regular.woff2),
+          url(/src/assets/fonts/garamond/eb-garamond-v14-latin-regular.woff);
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-display: swap;
   src:
-          url(../fonts/typold/woff2/Typold-Book-500.woff2),
-          url(../fonts/typold/woff/Typold-Book-500.woff);
+          url(/src/assets/fonts/typold/woff2/Typold-Book-500.woff2),
+          url(/src/assets/fonts/typold/woff/Typold-Book-500.woff);
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-style: normal;
   font-display: swap;
   src:
-          url(../fonts/typold/woff2/Typold-Light.woff2),
-          url(../fonts/typold/woff/Typold-Light.woff);
+          url(/src/assets/fonts/typold/woff2/Typold-Light.woff2),
+          url(/src/assets/fonts/typold/woff/Typold-Light.woff);
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-style: normal;
   font-display: swap;
   src:
-          url(../fonts/typold/woff2/Typold-Medium.woff2),
-          url(../fonts/typold/woff/Typold-Medium.woff);
+          url(/src/assets/fonts/typold/woff2/Typold-Medium.woff2),
+          url(/src/assets/fonts/typold/woff/Typold-Medium.woff);
 }
 
 @font-face {
@@ -39,6 +39,6 @@
   font-style: normal;
   font-display: swap;
   src:
-          url(../fonts/typold/woff2/Typold-Regular.woff2),
-          url(../fonts/typold/woff/Typold-Regular.woff);
+          url(/src/assets/fonts/typold/woff2/Typold-Regular.woff2),
+          url(/src/assets/fonts/typold/woff/Typold-Regular.woff);
 }

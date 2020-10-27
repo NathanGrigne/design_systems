@@ -4,6 +4,8 @@
     <div class="container">
       <h1>Planty</h1>
       <p class="third-title">How much are you a plant lover?</p>
+      <InputText />
+      <SocialButton type="google" />
       <div class="confirm-form">
         <div class="accept-term">
           <Checkbox />
@@ -17,11 +19,12 @@
 </template>
 
 <script>
-
 // Import Component PS : Caps is necessary on the first letter of tour component
 import PrimaryButton from "@/components/PrimaryButton.vue";
 import SecondaryButton from "@/components/SecondaryButton.vue";
-import Checkbox from "@/components/Checkbox.vue"
+import Checkbox from "@/components/Checkbox.vue";
+import InputText from "@/components/InputText.vue";
+import SocialButton from "@/components/BtnSocialConnexion.vue";
 
 export default {
   // Export Vue
@@ -29,7 +32,9 @@ export default {
   components: {
     PrimaryButton,
     SecondaryButton,
-    Checkbox
+    Checkbox,
+    InputText,
+    SocialButton
   }
 };
 </script>
