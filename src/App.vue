@@ -1,38 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/" class="default-text">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
   </div>
 </template>
 
 <script>
+import "./assets/styles/colors.scss";
+import "./assets/styles/fonts.scss";
 import "./assets/styles/main.scss";
 
 export default {};
 </script>
 
 <style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Garamond_regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: var(--error-100-color);
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  color: #FFFFFF;
+  background-image: url("assets/image/background.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 </style>
